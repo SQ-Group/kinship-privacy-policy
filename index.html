@@ -6,198 +6,145 @@
   <meta name="description" content="Kinship by Q Collection – Privacy Policy" />
   <title>Kinship – Privacy Policy</title>
   <style>
-    :root {
+    :root{
       --bg: #ffffff;
-      --panel: #ffffff;
-      --card: #ffffff;
       --text: #333333;
       --muted: #666666;
       --accent: #F08080;
-      --border: #f5a6a6;
+      --border: #f6d3d3;
+      --card-bg: #ffffff;
     }
-    html, body { height: 100%; }
-    body {
-      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background: var(--bg);
-      color: var(--text); line-height: 1.6;
-    }
-    .container { max-width: 920px; margin: 0 auto; padding: 24px; }
-    header { position: sticky; top: 0; background: rgba(255,255,255,.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); z-index: 50; }
-    header .inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .logo {
-      width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, #F08080, #f5a5a5);
-      display:flex; align-items:center; justify-content:center; font-weight: 800; color: white; letter-spacing: .5px;
-      box-shadow: 0 6px 18px rgba(240,128,128,.35);
-    }
-    .title { font-weight: 700; font-size: 1.05rem; color: var(--text); }
-    nav a { color: var(--muted); text-decoration: none; margin: 0 8px; font-size: .95rem; }
-    nav a:hover { color: var(--accent); }
-
-    .hero { padding: 56px 24px 24px; border: 1px solid var(--border); background: linear-gradient(180deg, rgba(240,128,128,.08), transparent 45%); }
-    .hero h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 2vw + 1rem, 2.2rem); letter-spacing: .3px; color: var(--accent); }
-    .hero p { margin: 0; color: var(--muted); max-width: 62ch; }
-
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,.05); }
-    section { margin: 28px 0; }
-    h2 { font-size: 1.15rem; margin: 0 0 8px; color: var(--accent); }
-    p { margin: 8px 0; }
-    ul { margin: 8px 0 8px 18px; }
-
-    .badge { display: inline-flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--accent); background: #fff; border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; }
-    .badge .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--accent); box-shadow: 0 0 0 4px rgba(240,128,128,.15); }
-
-    .two-col { display: grid; grid-template-columns: 1fr; gap: 16px; }
-    @media (min-width: 860px){ .two-col { grid-template-columns: 1fr 1fr; } }
-
-    footer { border-top: 1px solid var(--border); margin-top: 36px; padding: 24px; color: var(--muted); font-size: .95rem; }
-    .small { color: var(--muted); font-size: .95rem; }
-    .list-title { font-weight: 600; color: var(--text); }
-    .notice { border-left: 4px solid var(--accent); padding: 12px 14px; background: rgba(240,128,128,.05); border-radius: 10px; }
-    a { color: var(--accent); }
+    html,body{height:100%;margin:0;padding:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--text); background:var(--bg); line-height:1.6;}
+    header{background:linear-gradient(0deg, rgba(240,128,128,0.06), rgba(240,128,128,0.02)); padding:20px 0; border-bottom:1px solid var(--border);}
+    .wrap{max-width:920px;margin:28px auto;padding:0 20px;}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#f5a5a5);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.05rem;box-shadow:0 8px 24px rgba(240,128,128,0.09);}
+    h1{margin:6px 0 0;font-size:1.5rem;color:var(--accent);}
+    .meta{color:var(--muted);margin-top:8px}
+    nav{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+    nav a{color:var(--muted);text-decoration:none;font-size:.95rem;padding:6px 8px;border-radius:6px}
+    nav a:hover{color:var(--accent);background:rgba(240,128,128,0.03)}
+    .container{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:22px;margin-top:22px;box-shadow:0 6px 22px rgba(0,0,0,0.04)}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);color:var(--accent);background:#fff;font-size:.9rem}
+    .badge .dot{width:8px;height:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 4px rgba(240,128,128,0.08)}
+    h2{color:var(--accent);margin-top:24px;margin-bottom:8px;font-size:1.05rem}
+    p{margin:10px 0;color:var(--text)}
+    ul{margin:8px 0 12px 20px}
+    .two-col{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:860px){.two-col{grid-template-columns:1fr 1fr}}
+    .card{padding:16px;border-radius:10px;background:rgba(255,255,255,0.98);border:1px solid var(--border)}
+    .notice{border-left:4px solid var(--accent);padding:12px 14px;background:rgba(240,128,128,0.04);border-radius:8px;color:var(--muted)}
+    footer{margin-top:22px;padding:18px 0;color:var(--muted);text-align:center;font-size:.95rem}
+    a{color:var(--accent)}
   </style>
 </head>
 <body>
   <header>
-    <div class="inner">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">K</div>
-        <div class="title">Kinship • Privacy Policy</div>
+    <div class="wrap">
+      <div class="brand" aria-hidden="true">
+        <div class="logo">K</div>
+        <div>
+          <h1>Kinship</h1>
+          <div class="meta">Privacy Policy — Q Collection</div>
+        </div>
       </div>
+
       <nav aria-label="On-page navigation">
-        <a href="#introduction">Introduction</a>
-        <a href="#scope">Scope & Audience</a>
-        <a href="#collection">Information We Collect</a>
+        <a href="#intro">Introduction</a>
+        <a href="#public">Public Users</a>
+        <a href="#auth">Authenticated Users</a>
+        <a href="#collect">Information Collected</a>
         <a href="#use">How We Use Information</a>
-        <a href="#permissions">Permissions</a>
-        <a href="#security">Security</a>
-        <a href="#sharing">Sharing</a>
         <a href="#rights">Your Rights</a>
-        <a href="#cookies">Cookies</a>
-        <a href="#changes">Changes</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <div class="container">
-    <div class="hero">
-      <span class="badge" role="note"><span class="dot" aria-hidden="true"></span> Effective Date: September 2, 2025</span>
-      <h1>Privacy Policy</h1>
-      <p>Kinship is a public-facing app by <strong>Q Collection</strong> with optional employee sign‑in. This policy explains what we collect, how we use it, and your rights.</p>
+  <main class="wrap">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+        <div>
+          <span class="badge"><span class="dot"></span> Effective Date: September 2, 2025</span>
+          <h2 id="intro" style="margin-top:12px">Privacy Policy</h2>
+          <p><strong>Kinship</strong> is a public-facing mobile application developed by <strong>Q Collection</strong>. The application provides general information globally, while authenticated users in regions such as the UK, Singapore, Morocco, Bangladesh, and Sri Lanka are granted access to additional features, including communications, grievance management, organizational services, and survey participation. This policy outlines the types of information we collect, the purposes for which it is used, and the measures in place to safeguard your rights and privacy.</p>
+          <p>At Kinship (by Q Collection), we respect your privacy and are committed to safeguarding your personal information. We collect and use limited data to provide services such as communication, grievance management, and surveys, while ensuring your information is protected. By using Kinship, you agree to this policy and your rights remain fully protected.</p>
+        </div>
+      </div>
+
+      <section id="public" class="card" style="margin-top:18px">
+        <h2>Public Users</h2>
+        <p>The following modules are accessible to all users without requiring any personal information:</p>
+        <ul>
+          <li>About Us</li>
+          <li>Business</li>
+          <li>Offices</li>
+          <li>News</li>
+          <li>Gallery</li>
+        </ul>
+
+        <p>No personal information is required to access these public modules. However, the app may collect basic technical data (such as device and performance logs) to ensure app functionality, security, and continuous improvement.</p>
+      </section>
+
+      <section id="auth" class="card" style="margin-top:18px">
+        <h2>Authenticated Users</h2>
+        <p>Registered and verified users can sign in to access internal modules via the sidebar. Certain employee-only features may require limited personal information strictly to enable authentication and ensure proper functionality.</p>
+      </section>
+
+      <section id="collect" class="card" style="margin-top:18px">
+        <h2>Employees (Upon Login)</h2>
+        <div class="two-col">
+          <div>
+            <p>For authenticated employees, limited personal information is collected strictly for authentication and functionality purposes:</p>
+            <ul>
+              <li><strong>Name</strong> – to personalize your profile and enhance app experience.</li>
+              <li><strong>Email Address</strong> – to enable secure login and access.</li>
+              <li><strong>Photo</strong> – for profile display and internal identification.</li>
+            </ul>
+          </div>
+          <div>
+            <p>Permissions (only when a feature requires them):</p>
+            <ul>
+              <li><strong>Camera Access</strong> – only when a feature requires capturing images or videos.</li>
+              <li><strong>Audio Access</strong> – only for features that involve voice input or recordings.</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin-top:8px">We collect only what is necessary to provide the requested functionality.</p>
+      </section>
+
+      <section id="use" class="card" style="margin-top:18px">
+        <h2>How We Use Information</h2>
+        <ul>
+          <li>To provide, operate, and enhance app features and services.</li>
+          <li>To enable secure login and access to employee-only modules.</li>
+          <li>To personalize the employee experience within the app.</li>
+          <li>To communicate internal updates, where applicable.</li>
+          <li>To analyze usage patterns to improve app performance and reliability.</li>
+          <li>To comply with legal obligations and respond to lawful requests.</li>
+        </ul>
+        <p class="notice">For public users, personal data is not collected unless voluntarily provided through external channels, such as email.</p>
+      </section>
+
+      <section id="rights" class="card" style="margin-top:18px">
+        <h2>Your Rights & Security</h2>
+        <p>At Kinship, we respect your privacy and are committed to protecting your personal information. We use industry-standard technical and organizational measures to safeguard data. While we strive to protect your data, no method of transmission over the internet or electronic storage is completely secure.</p>
+
+        <p>You have rights regarding your personal data, including the right to access, correct, or delete your information. Employees may update their details within the app or contact support for assistance. Depending on your region (for example, the European Union), additional rights may apply under local data protection laws.</p>
+      </section>
+
+      <section id="contact" class="card" style="margin-top:18px">
+        <h2>Contact</h2>
+        <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:celsiusapps@sqgc.com">celsiusapps@sqgc.com</a></p>
+        <p class="meta" style="margin-top:6px">Q Collection</p>
+      </section>
+
+      <footer style="margin-top:18px">
+        <div>© <span id="year"></span> Q Collection. All rights reserved.</div>
+      </footer>
     </div>
-
-    <section id="introduction" class="card">
-      <h2>Introduction</h2>
-      <p>At <strong>Kinship</strong> (by Q Collection), we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use the Kinship app.</p>
-    </section>
-
-    <section id="scope" class="card">
-      <h2>Scope &amp; Audience</h2>
-      <div class="two-col">
-        <div>
-          <p class="list-title">Public Users</p>
-          <p>Anyone can access the following modules <strong>without providing any personal information</strong>:</p>
-          <ul>
-            <li>About Us</li>
-            <li>Business</li>
-            <li>Offices</li>
-            <li>News</li>
-            <li>Gallery</li>
-          </ul>
-        </div>
-        <div>
-          <p class="list-title">Employees</p>
-          <p>Employees can sign in to access internal modules from the sidebar. Employee‑only features require limited personal data for authentication and functionality.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="collection" class="card">
-      <h2>Information We Collect</h2>
-      <div class="two-col">
-        <div>
-          <p class="list-title">Public Users</p>
-          <p>We do not require personal information to access public modules. Technical logs (e.g., device and performance data) may be collected to maintain and improve the app.</p>
-        </div>
-        <div>
-          <p class="list-title">Employees (upon login)</p>
-          <ul>
-            <li><strong>Name</strong> – to personalize your profile and app experience.</li>
-            <li><strong>Email Address</strong> – for authentication and secure access.</li>
-            <li><strong>Photo</strong> – for profile display and internal identification.</li>
-            <li><strong>Camera Access</strong> – for capturing images or videos only when a feature requires it.</li>
-            <li><strong>Audio Access</strong> – for features requiring voice input or recordings.</li>
-          </ul>
-          <p>We collect only what is necessary to provide the requested functionality.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="use" class="card">
-      <h2>How We Use Information</h2>
-      <ul>
-        <li>Provide, operate, and improve app features and services.</li>
-        <li>Enable secure login and access to employee‑only modules.</li>
-        <li>Personalize the employee experience within the app.</li>
-        <li>Communicate internal updates where applicable.</li>
-        <li>Analyze usage to enhance performance and reliability.</li>
-        <li>Comply with legal obligations and respond to lawful requests.</li>
-      </ul>
-      <p class="notice small">Public users’ personal data is not collected unless they voluntarily contact us through external channels (e.g., email).</p>
-    </section>
-
-    <section id="permissions" class="card">
-      <h2>App Permissions</h2>
-      <ul>
-        <li><strong>Camera</strong> – used only when you choose a feature that requires capturing photos or videos.</li>
-        <li><strong>Photos/Media</strong> – used to upload a profile picture or share internal content where applicable.</li>
-        <li><strong>Audio</strong> – used for internal features requiring voice input or recordings.</li>
-      </ul>
-      <p class="small">You can disable these permissions at any time in your device settings, though some features may not work without them.</p>
-    </section>
-
-    <section id="security" class="card">
-      <h2>How We Protect Your Information</h2>
-      <p>We implement industry‑standard security measures such as encryption, secure storage, and access controls to safeguard data. However, no method of transmission or storage is 100% secure.</p>
-    </section>
-
-    <section id="sharing" class="card">
-      <h2>Sharing Your Information</h2>
-      <p>We do <strong>not</strong> sell, rent, or trade your personal information. We may share information only to comply with the law, protect our rights, or maintain app security.</p>
-    </section>
-
-    <section id="rights" class="card">
-      <h2>Your Data Rights</h2>
-      <ul>
-        <li>Access, correct, or update your personal information.</li>
-        <li>Request deletion of your data, subject to applicable company or legal requirements.</li>
-        <li>Manage permissions (camera, photos, audio) in your device settings.</li>
-      </ul>
-      <p class="small">Depending on your region (e.g., the European Union), you may have additional rights under applicable data protection laws.</p>
-    </section>
-
-    <section id="cookies" class="card">
-      <h2>Cookies &amp; Tracking</h2>
-      <p>Kinship does not use cookies or similar tracking technologies for public access to the app’s open modules. Limited technical logs may be collected to monitor performance and troubleshoot issues.</p>
-    </section>
-
-    <section id="changes" class="card">
-      <h2>Changes to This Policy</h2>
-      <p>We may update this Privacy Policy to reflect changes in features, practices, or legal requirements. Updates will be posted in‑app, and material changes will be clearly communicated.</p>
-    </section>
-
-    <section id="contact" class="card">
-      <h2>Contact Us</h2>
-      <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
-      <p><strong>Email:</strong> <a href="mailto:celsiusapps@sqgc.com">celsiusapps@sqgc.com</a></p>
-      <p class="small">Q Collection</p>
-    </section>
-
-    <footer>
-      <p>© <span id="year"></span> Q Collection. All rights reserved.</p>
-    </footer>
-  </div>
+  </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
